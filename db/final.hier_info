@@ -1,0 +1,24 @@
+|toplevel
+clock => clock.IN1
+red <= <GND>
+green <= <GND>
+blue <= pwm:b_pwm.port3
+sw[0] => ~NO_FANOUT~
+sw[1] => ~NO_FANOUT~
+sw[2] => ~NO_FANOUT~
+
+
+|toplevel|pwm:b_pwm
+clk => pwm_q.CLK
+clk => ctr_q[0].CLK
+clk => ctr_q[1].CLK
+clk => ctr_q[2].CLK
+rst => ctr_q.OUTPUTSELECT
+rst => ctr_q.OUTPUTSELECT
+rst => ctr_q.OUTPUTSELECT
+compare[0] => LessThan0.IN3
+compare[1] => LessThan0.IN2
+compare[2] => LessThan0.IN1
+pwm <= pwm_q.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, final.v
+source_file = 1, C:/Users/Student/Documents/makeup-350-final-project/pwm.v
+source_file = 1, C:/Users/Student/Documents/makeup-350-final-project/toplevel.v
+source_file = 1, C:/Users/Student/Documents/makeup-350-final-project/db/final.cbx.xml
+design_name = toplevel
+instance = comp, \red~output , red~output, toplevel, 1
+instance = comp, \green~output , green~output, toplevel, 1
+instance = comp, \blue~output , blue~output, toplevel, 1
+instance = comp, \clock~input , clock~input, toplevel, 1
+instance = comp, \sw[0]~input , sw[0]~input, toplevel, 1
+instance = comp, \sw[1]~input , sw[1]~input, toplevel, 1
+instance = comp, \sw[2]~input , sw[2]~input, toplevel, 1

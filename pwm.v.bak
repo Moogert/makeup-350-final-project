@@ -1,0 +1,10 @@
+// pwm. 
+// modified from embedded micro. 
+module pwm#(parameter CTR_LEN = 8) (
+	input clk,
+	input rst, 
+	input [CTR_LED -1 :0] compare, 
+	output pwm
+	); 
+	
+	reg pwm_d, pwm_q

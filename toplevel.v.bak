@@ -1,0 +1,16 @@
+// my final project. 
+module final(clock, red, green, blue); 
+	input clock; 
+	output red, green, blue; 
+	wire[3:0] bluvals; 
+	
+	pwm #(.CTR_LEN(3)) blue (
+	.rst(reset), 
+	.clk(clk), 
+	compare(3'd0), 
+	.pwm(blue)
+	); 
+
+
+endmodule 
+
